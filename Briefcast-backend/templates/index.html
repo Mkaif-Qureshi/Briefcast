@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Summarization</title>
+</head>
+<body>
+    <h1>Upload Podcast for Summarization</h1>
+    <form action="/transcribe" method="post" enctype="multipart/form-data">
+        <label for="audio">Choose an audio file:</label>
+        <input type="file" id="audio" name="audio" accept="audio/*">
+        <button type="submit">Transcribe</button>
+    </form>
+
+    <h2>Summary</h2>
+    <p id="summary"></p>
+</body>
+</html>
